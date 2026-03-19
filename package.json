@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npx convex dev --once && next dev --turbopack",
-    "dev:convex": "npx convex dev",
-    "build": "npx convex deploy --cmd 'next build'",
-    "predev": "npx convex dev --until-success",
+    "dev": "next dev --turbopack",
+    "dev:all": "npx convex dev --run 'next dev --turbopack'",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
